@@ -38,5 +38,5 @@ jobs:
 
     - name: Deploy to S3
       run: |
-        aws s3 sync . s3://${{ secrets.s3_BUCKET_NAME }} --exclude ".git/*" --exclude ".github/*" --
-        exclude "node_modules/*" --exclude "package*.json" --exclude "test.js"
+        aws s3 sync . s3://${{ secrets.s3_BUCKET_NAME }} --exclude ".git/*" --exclude ".github/*" --exclude
+         "node_modules/*" --exclude "package*.json" --exclude "test.js"
